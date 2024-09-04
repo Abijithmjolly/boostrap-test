@@ -14,91 +14,96 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
 
 <body class="bg-danger">
-    <div class="container-fluid px-5 py-5 ">
+    <div class="container-fluid p-5  ">
         <section>
+
             <div class="container-fluid px-5 ">
                 <div class="row ">
                     <div class="col-6 ">
-                        <div class="bg-white rounded-4  p-4 py-5 d-flex flex-column gap-3">
-                            <h3>Basic Details</h3>
+                        <div class="bg-white rounded-4  p-4  d-flex flex-column gap-1">
+                            <h4 class="fw-bold head-color">Basic Details</h4>
 
 
                             <label for="file"
-                                class="d-flex justify-content-center align-items-center upload-box p-4 border rounded-3  border-primary  ">
+                                class="d-flex justify-content-center align-items-center upload-box p-4  rounded-3 bg-light-subtle cus-border border-light-subtle   ">
                                 <input type="file" class="Upload-input" id="file" hidden>
-                                <div class="d-flex flex-column align-items-center gap-2   ">
-                                    <i class="fa-solid fa-arrow-up-from-bracket fs-5"></i>
-                                    <h5>Upload Image</h5>
-                                    <h6>PNG, JPG files are allowed</h6>
+                                <div class="d-flex flex-column align-items-center  ">
+                                    <i class="fa-solid fa-arrow-up-from-bracket fs-3 custom-color"></i>
+                                    <h5 class="font-size-bold custom-color">Upload Image</h5>
+                                    <h6 class="font-size-general">PNG, JPG files are allowed</h6>
                                 </div>
                             </label>
+                            <div class="mt-3">
+                                <div class=" row  ">
 
-                            <div class=" row  ">
+                                    <div class=" col d-flex flex-column gap-2 font-size-bold">
 
-                                <div class="col-2 d-flex flex-column gap-2">
 
-                                    <label for="exampleDropdownFormPassword1" class="form-label ">Salutation *</label>
-                                    <div>
-                                        <button
-                                            class="btn btn-secondary btn-sm rounded-5 btn-primary dropdown-toggle smallest custom-btn-size"
-                                            type="button" id="dropdownMenuButton1 " data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            selection
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item smallest" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <label>Salutation <span class="text-danger">*</span></label>
+                                        <div> <select class="form-select  rounded-4 p-3 font-size-general">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select></div>
+
+                                    </div>
+
+                                    <div class="col-4 d-flex flex-column  ">
+                                        <label for="exampleDropdownFormPassword1"
+                                            class="form-label font-size-bold">firstname <span
+                                                class="text-danger">*</span></label>
+                                        <input type="password"
+                                            class="form-control border border-light-subtle rounded-4 font-size-general p-3"
+                                            id="exampleDropdownFormPassword1" placeholder="John">
+
+                                    </div>
+                                    <div class=" col-5 d-flex flex-column ">
+                                        <label for="exampleDropdownFormEmail1" class="form-label font-size-bold">Last
+                                            names <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control rounded-4 font-size-general p-3"
+                                            id="exampleDropdownFormEmail1" placeholder="email@example.com">
                                     </div>
                                 </div>
+                            </div>
+                            </form>
+                            <form class=" row pt-3 d-flex justify-content-between">
 
-                                <div class="col-5 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control rounded-3"
+
+
+                                <div class="col-6 d-flex flex-column ">
+                                    <label for="exampleDropdownFormPassword1" class="form-label font-size-bold">Email
+                                        Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control rounded-4 font-size-general p-3 rounded-3"
+                                        id="exampleDropdownFormPassword1" placeholder="email@example.com">
+
+                                </div>
+                                <div class=" col-6 d-flex flex-column font-size-bold">
+                                    <label for="exampleDropdownFormEmail1" class="form-label">Mobile Number <span
+                                            class="text-danger">*</span></label>
+                                    <input type="number" class="form-control rounded-4 font-size-general p-3 rounded-3"
+                                        id="exampleDropdownFormEmail1" placeholder="enter mobile number">
+                                </div>
+                            </form>
+                            <form class=" row pt-3 d-flex justify-content-between">
+
+
+
+                                <div class="col-6 d-flex flex-column ">
+                                    <label for="exampleDropdownFormPassword1" class="form-label font-size-bold">Date
+                                        of
+                                        Birth <span class="text-danger"> *</span></label>
+                                    <input type="date" class="form-control rounded-4 font-size-general p-3 rounded-3"
                                         id="exampleDropdownFormPassword1" placeholder="Password">
 
                                 </div>
-                                <div class=" col-5 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control rounded-3" id="exampleDropdownFormEmail1"
-                                        placeholder="email@example.com">
-                                </div>
-                            </div>
-
-                            </form>
-                            <form class=" row pt-3 d-flex justify-content-between">
-
-
-
-                                <div class="col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Email Address *</label>
-                                    <input type="email" class="form-control rounded-3" id="exampleDropdownFormPassword1"
-                                        placeholder="email@example.com">
-
-                                </div>
-                                <div class=" col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Mobile Number *</label>
-                                    <input type="number" class="form-control rounded-3" id="exampleDropdownFormEmail1"
-                                        placeholder="enter mobile number">
-                                </div>
-                            </form>
-                            <form class=" row pt-3 d-flex justify-content-between">
-
-
-
-                                <div class="col-6 d-flex flex-column gap-2 ">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Date of Birth *</label>
-                                    <input type="date" class="form-control rounded-3" id="exampleDropdownFormPassword1"
-                                        placeholder="Password">
-
-                                </div>
-                                <div class=" col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                <div class=" col-6 d-flex flex-column ">
+                                    <label for="exampleDropdownFormEmail1" class="form-label font-size-bold">Gender<span
+                                            class="text-danger">*</span></label>
                                     <div class="pt-2">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions"
@@ -117,10 +122,12 @@
 
 
 
-                                <div class="col-12 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control rounded-3"
-                                        id="exampleDropdownFormPassword1" placeholder="Password">
+                                <div class="col-12 d-flex flex-column font-size-bold">
+                                    <label for="exampleDropdownFormPassword1" class="form-label">Address <span
+                                            class="text-danger">*</span></label>
+                                    <input type="password"
+                                        class="form-control rounded-4 font-size-general p-3 rounded-3"
+                                        id="exampleDropdownFormPassword1" placeholder="Address">
 
                                 </div>
 
@@ -130,108 +137,134 @@
 
 
 
-                                <div class="col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control rounded-3"
-                                        id="exampleDropdownFormPassword1" placeholder="Password">
+                                <div class="col-6 d-flex flex-column font-size-bold gap-2">
+                                    <label>country <span class="text-danger">*</span></label>
+                                    <div> <select class="form-select  rounded-4 p-3 font-size-general">
+                                            <option>India</option>
+                                            <option>UK</option>
 
+                                        </select></div>
                                 </div>
-                                <div class=" col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control rounded-3" id="exampleDropdownFormEmail1"
-                                        placeholder="email@example.com">
+                                <div class=" col-6 d-flex flex-column gap-2 font-size-bold">
+                                    <label>State<span class="text-danger">*</span></label>
+                                    <div> <select class="form-select  rounded-4 p-3 font-size-general">
+                                            <option>goa</option>
+                                            <option>himachal</option>
+                                            <option>kashmir</option>
+                                            <option>kerala</option>
+                                        </select></div>
                                 </div>
                             </form>
                             <form class=" row pt-3 d-flex justify-content-between">
 
 
 
-                                <div class="col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control rounded-3"
+                                <div class="col-6 d-flex flex-column font-size-bold">
+                                    <label for="exampleDropdownFormPassword1" class="form-label">City <span
+                                            class="text-danger"> *</span></label>
+                                    <input type="password"
+                                        class="form-control rounded-4 font-size-general p-3 rounded-3"
                                         id="exampleDropdownFormPassword1" placeholder="Password">
 
                                 </div>
-                                <div class=" col-6 d-flex flex-column gap-2">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control rounded-3" id="exampleDropdownFormEmail1"
-                                        placeholder="email@example.com">
+                                <div class=" col-6 d-flex flex-column font-size-bold">
+                                    <label for="exampleDropdownFormEmail1" class="form-label">pin/zip <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control rounded-4 font-size-general p-3 rounded-3"
+                                        id="exampleDropdownFormEmail1" placeholder="email@example.com">
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-6 d-flex flex-column gap-2">
-                        <div class="bg-white h-100 rounded-4 p-4  ">
+                    <!-- section 2 -->
 
-                            <h3>Advanced Details</h3>
-                            <div
-                                class="d-flex justify-content-center  align-items-center  p-3 bg-danger-subtle rounded-3    ">
-                                <div class="d-flex flex-column">
+                    <div class="col-6">
+                        <div class="bg-white rounded-4  p-4  d-flex flex-column gap-2">
+
+                            <h4 class="fw-bold head-colo">Advanced Details</h4>
+                            <div class="d-flex justify-content-center  align-items-center    ">
+                                <div class="d-flex flex-column p-4 font-size-general-alert rounded-4 ">
 
                                     <h6>Sample warning messages - alert</h6>
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                        sed
                                         fermentum
                                         felis.
                                         Aliquam erat volutpat. Donec faucibus mauris vel nibh sodales feugiat. Donec
                                         suscipit felis vitae orci porttitor congue.</p>
                                 </div>
                             </div>
+                            <div class="py-4">
+                                <form class=" row ">
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column gap-3">
 
-                            <form class=" row ">
-                                <div class="col-6">
-                                    <div class=" row align-items-center">
-
-                                        <label for="customRange1" class="form-label">Example range</label>
-                                        <div class="col-9">
-                                            <input type="range" class="form-range" id="customRange1">
-                                        </div>
-                                        <div class=" col-3">
-                                            <div class="border d-flex justify-content-center p-2  rounded-4">100cm</div>
+                                            <label class="font-size-bold" for="formControlRange ">Example Range
+                                                input</label>
+                                            <div class=" row align-items-center ">
+                                                <div class="col-9">
+                                                    <input type="range" class="form-range " id="customRange2"
+                                                        onInput="$('#rangeval').html($(this).val())">
+                                                </div>
+                                                <div class=" col-3 p-0 d-flex ">
+                                                    <div class=" border px-3 py-2 rounded-4"> <span id="rangeval">50
+                                                            <!-- Default value --></span>cm</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class=" row align-items-center">
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column gap-3">
 
-                                        <label for="customRange1" class="form-label">Example range</label>
-                                        <div class="col-9">
-                                            <input type="range" class="form-range" id="customRange1">
+                                            <label class="font-size-bold" for="formControlRange ">Example Range
+                                                input</label>
+                                            <div class=" row align-items-center ">
+                                                <div class="col-9">
+                                                    <input type="range" class="form-range " id="customRange2"
+                                                        onInput="$('#rangeval2').html($(this).val())">
+                                                </div>
+                                                <div class=" col-3 p-0 d-flex ">
+                                                    <div class=" border px-3 py-2 rounded-3"> <span id="rangeval2">50
+                                                            <!-- Default value --></span>cm</div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class=" col-3">
-                                            <div class="border d-flex justify-content-center p-2  rounded-4">100</div>
-                                        </div>
-
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
 
                             <form class=" row pt-3 d-flex justify-content-between">
 
 
 
                                 <div class="col-6 ">
-                                    <label for="exampleColorInput" class="form-label ">Color picker</label>
+                                    <label for="exampleColorInput" class="form-label font-size-bold">Color picker<span
+                                            class="text-danger">*</label>
                                     <input type="color" class="form-control form-control-color w-100"
                                         id="exampleColorInput" value="#563d7c" title="Choose your color">
 
                                 </div>
                                 <div class=" col-6">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                    <label for="exampleDropdownFormEmail1" class="form-label font-size-bold">Email
+                                        address<span class="text-danger">*</label>
                                     <div class="pt-2">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
                                                 value="option1">
-                                            <label class="form-check-label " for="inlineCheckbox1">Template 1</label>
+                                            <label class="form-check-label font-size-general"
+                                                for="inlineCheckbox1">Template 1</label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
                                                 value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">Template 2</label>
+                                            <label class="form-check-label font-size-general"
+                                                for="inlineCheckbox2">Template 2</label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
                                                 value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">Template 3</label>
+                                            <label class="form-check-label font-size-general"
+                                                for="inlineCheckbox2">Template 3</label>
                                         </div>
 
                                     </div>
@@ -242,8 +275,11 @@
 
 
                                 <div class="col-12 ">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Qualifications</label>
-                                    <input type="textarea" class="form-control rounded-3 h-1"
+                                    <label for="exampleDropdownFormPassword1"
+                                        class="form-label font-size-bold">Qualifications<span
+                                            class="text-danger">* </span> </label>
+                                    <input type="textarea"
+                                        class="form-control rounded-4 font-size-general p-3 rounded-3 h-1"
                                         id="exampleDropdownFormPassword1" placeholder="enter qualifications">
 
                                 </div>
@@ -255,11 +291,14 @@
 
 
                                 <div class="col-12 ">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Qualifications</label>
+                                    <label for="exampleDropdownFormPassword1"
+                                        class="form-label font-size-bold">Qualifications<span
+                                            class="text-danger">*</label>
                                     <div class="form-floating ">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextarea2" style="height: 20vh"></textarea>
-                                        <label for="floatingTextarea2">Comments</label>
+                                        <textarea class="form-control rounded-4 " placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 169px"></textarea>
+                                        <label class="text-secondary font-rounded-4 font-size-general"
+                                            for="floatingTextarea2">Comments</label>
                                     </div>
                                 </div>
 
@@ -271,21 +310,24 @@
                                 <div class="form-check form-check-inline ">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
                                         value="option2">
-                                    <label class="form-check-label" for="inlineCheckbox2">I Accept Terms &
-                                        Conditions</label>
+                                    <label class="form-check-label font-size-general" for="inlineCheckbox2">I Accept
+                                        Terms &
+                                        Conditions<span class="text-danger">*</label>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="container-fluid px-5 py-3">
 
                 <div class="bg-white rounded-4 p-3">
                     <div class="row ">
                         <div class="col justify-content-end d-flex  gap-2">
-                            <button type="button" class="btn btn-primary btn-lg">Small button</button>
-                            <button type="button" class="btn btn-secondary btn-lg">Small button</button>
+                            <button type="button" class="btn btn-light btn-lg font-size-general text-black px-4 ">cancel</button>
+                            <button type="button" class="btn btn-primary btn-lg font-size-general text-white ">Save Changes</button>
                         </div>
                     </div>
                 </div>
@@ -298,6 +340,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--  -->
+
+
 </body>
 
 </html>

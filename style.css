@@ -1,8 +1,45 @@
-html{
-    font-size: 12px;
-    
+html {
+    font-size: 14px;
+
 }
-#input-file{
-    width: 100px;
-    height: 100px;
+
+.font-size-general {
+    font-size: 0.8rem !important;
+    color: #9d9d9d !important;
+    font-family: DM Sans;
+   
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+   
+
+}
+.font-size-general-alert{
+    font-size: 0.8rem !important;
+    color: #624E17 !important;
+    font-family: DM Sans;
+  border: #FBE7A5 ;
+   background-color: #FDF4D1;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+   
+
+}
+
+.cus-border {
+    border-color: grey !important;
+    border: 3px dashed !important;
+}
+
+.font-size-bold {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+    color: #2B3674 !important;
+}
+.head-color{
+    color: #2B3674 ;
+}
+.custom-color {
+    color: #4318FF;
 }
