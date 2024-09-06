@@ -1,3 +1,6 @@
+*{
+    transition: 0.6s ease-in-out;
+}
 html {
     font-size: 14px;
 
